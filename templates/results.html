@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <script>
+        let data = {{ res|tojson }}
+    </script>
+    <div class="box one-edge-shadow">
+            <h1>Results</h1>
+            <div id="result">
+                <div class="bar">
+                    <canvas id="resnet" height="77"></canvas>
+                </div>
+
+                <div class="bar">
+                    <canvas id="eff" height="77"></canvas>
+                </div>
+
+                <div class="bar">
+                    <canvas id="incept" height="77"></canvas>
+                </div>
+
+            </div>
+
+            <a href="{{ url_for('index') }}"><button id="again">Try Again</button></a>
+
+    </div>
+    <script src="{{ url_for('static', filename='process.js') }}"></script>
+{% endblock content %}
