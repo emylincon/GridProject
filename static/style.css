@@ -60,7 +60,19 @@ html, body{
     background-color: white;
     padding: 10px 20px;
     text-align: center;
+    animation: move 1s ease-in;
     /* border: 1px solid yellow; */
+}
+
+@keyframes move{
+    from{
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 table.query{
