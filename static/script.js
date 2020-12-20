@@ -51,6 +51,8 @@ function capture(){
 
 function loading() {
     let canvas = document.querySelector('#image');
+    let btn = document.querySelector('button');
+    btn.remove();
     canvas.outerHTML = `<div id="loading">
                     <div id="ring" class="ring">LOADING<div class='ringer'></div></div>
                 </div>`;
