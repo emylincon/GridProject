@@ -33,7 +33,7 @@ var resnet = new Chart(ctx, {
             }]
         },
         title: {
-            text: "RESNET50 Model",
+            text: "RESNET50 Base Model",
             display: true,
             fontStyle: 'bold',
         },
@@ -78,7 +78,7 @@ var eff = new Chart(ctx1, {
             }]
         },
         title: {
-            text: "InceptionV3 Model",
+            text: "InceptionV3 Base Model",
             display: true,
             fontStyle: 'bold',
         },
@@ -123,7 +123,7 @@ var incept = new Chart(ctx2, {
             }]
         },
         title: {
-            text: "EfficientNetB7 Model",
+            text: "EfficientNetB7 Base Model",
             display: true,
             fontStyle: 'bold',
         },
