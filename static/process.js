@@ -2,7 +2,7 @@ var ctx = document.getElementById('resnet').getContext('2d');
 var resnet = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ['EC', 'NEC'],
+        labels: ['Eczema', 'Healthy'],
         datasets: [{
             label: '% Predicted',
             data: [1,1],
@@ -47,7 +47,7 @@ var ctx1 = document.getElementById('eff').getContext('2d');
 var eff = new Chart(ctx1, {
     type: 'horizontalBar',
     data: {
-        labels: ['EC', 'NEC'],
+        labels: ['Eczema', 'Healthy'],
         datasets: [{
             label: '% Predicted',
             data: [1,1],
@@ -92,7 +92,7 @@ var ctx2 = document.getElementById('incept').getContext('2d');
 var incept = new Chart(ctx2, {
     type: 'horizontalBar',
     data: {
-        labels: ['EC', 'NEC'],
+        labels: ['Eczema', 'Healthy'],
         datasets: [{
             label: '% Predicted',
             data: [1,1],
