@@ -15,7 +15,6 @@ function file_label(){
 }
 
 function loading() {
-    console.log('loading');
     let canvas = document.querySelector('#image');
     canvas.outerHTML = `<div id="loading">
                     <div id="ring" class="ring">LOADING<div class='ringer'></div></div>
