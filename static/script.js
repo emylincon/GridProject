@@ -28,24 +28,16 @@ function capture(){
     let context = canvas.getContext('2d');
     let vid = document.querySelector('.videoObject');
 
-
-    // var image = document.getElementById('image'),
-    // context = image.getContext('2d');  //setting for resolution of image
-
-        // draw a image when the button clicked on the canvas
-
     context.drawImage(video , 0 , 0 , 500 , 400);
-    console.log(video.height, video.width, canvas.height , canvas.width);
+    // console.log(video.height, video.width, canvas.height , canvas.width);
     vid.innerHTML = '';
     vid.appendChild(canvas);
     let img = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
-    console.log(img);
+    // console.log(img);
     img_string = img;
     let change = document.querySelector('#change');
     // change.innerHTML = `<button onclick="fetchResult()">Process</button>`;
     change.innerHTML = `<a onclick="loading()" href="/process/${img}"><button>Process</button></a>`;
-    // window.location.href=img; // it will save locally
-
 
 }
 
