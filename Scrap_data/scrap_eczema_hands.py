@@ -16,7 +16,7 @@ class Scrap:
         options = webdriver.ChromeOptions()
         options.add_argument('headless')
 
-        chrome_p = os.listdir('chrome_driver/')[0]
+        chrome_p = os.listdir('../chrome_driver/')[0]
         chrome_path = f'chrome_driver/{chrome_p}'
         driver = webdriver.Chrome(chrome_path, options=options)
         return driver
@@ -48,4 +48,4 @@ class Scrap:
 
 
 
-Scrap().get_images('data/ec')
+Scrap().get_images('../data/ec')

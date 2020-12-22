@@ -11,7 +11,7 @@ import time
 
 class Picture:
     def __init__(self, pic):
-        self.unsplash_key = os.environ['UNSPLASH_KEY']
+        self.unsplash_key = os.environ['UNSPLASH_KEY']    # add your unsplash key here
         request_headers = {
             "Authorization": f"Client-ID {self.unsplash_key}",
             "Accept": "application/json",
