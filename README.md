@@ -1,6 +1,7 @@
 ## Grid Project for [Eczamine](https://www.eczamine.com/)
 Image classification to ascertain if the skin region has eczema
 
+![Demo Video](static/video_gif.gif)
 
 ## How to Use
 * Download models from [google drive](https://drive.google.com/drive/folders/1q8YEYfueLgoXO9SewZ2DxKutZfwVBqz8?usp=sharing) and save in models folder
