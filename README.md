@@ -1,4 +1,4 @@
-## Grid Project
+## Grid Project for Eczamine
 Image classification to ascertain if the skin region has eczema
 
 ## Useful links
