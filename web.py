@@ -1,5 +1,4 @@
-from flask import Flask, render_template, url_for, request, jsonify, Response
-import base64
+from flask import Flask, render_template, url_for, request, redirect
 import codecs as c
 import time
 from werkzeug.utils import secure_filename
@@ -57,7 +56,7 @@ def compare():
 
         return render_template('results.html', res=result)
     else:
-        return home()
+        return redirect(url_for('home'))
 
 
 if __name__ == '__main__':
