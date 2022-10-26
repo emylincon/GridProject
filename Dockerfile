@@ -4,8 +4,8 @@ WORKDIR /drive
 
 RUN pip install gdown && gdown --folder 1q8YEYfueLgoXO9SewZ2DxKutZfwVBqz8 -O models 
 
-COPY static ./
-COPY templates ./
+COPY static ./static
+COPY templates ./templates
 COPY *.py ./
 
 FROM python:3.8.15
