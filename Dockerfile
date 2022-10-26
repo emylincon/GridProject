@@ -1,12 +1,21 @@
+FROM python:3.8 as gdown
+
+WORKDIR /drive
+
+RUN pip install gdown && gdown --folder --id 1q8YEYfueLgoXO9SewZ2DxKutZfwVBqz8 -O models 
+
+COPY static .
+COPY templates .
+COPY *.py .
+
 FROM python:3.8.15
 
 WORKDIR /app
 
-COPY /static /static
-COPY /templates /templates
-COPY *.py .
 COPY requirements.txt .
+COPY --from=gdown /drive ./
 
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
 
-CMD ["python3" "web.py"]
+CMD ["python", "web.py"]
